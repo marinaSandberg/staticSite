@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font: inherit;
+    overflow-wrap: break-word;
+}
+ 
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+body { 
+    min-height: 100vh;
+    font-family: Calibri;
+    --font1: Calibri;
+    --font2:serif;
+    --color1: rgb(236, 222, 209);
+    --color2: rgb(164, 127, 106);
+    --color3: rgb(222, 191, 173);
+    --border: solid 0.5px;
+}
+
+h1 {
+    font-family: var(--font2);
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font1);
+    font-size: 0.6rem;
+    color: black;
+}
+
+h3{
+    font-family: var(--font2);
+    font-size: 0.9rem;
+}
+
+h4, h5 {
+    font-family: var(--font1);
+    font-size: 0.6rem;
+}
+
+/* --------------header-------------- */
+
+header {
+    background-color:var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div {
+    padding: 0.5rem 2rem;
+}
+
+nav#menu {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2rem;
+    gap: 2rem;
+}
+
+nav#menu a {
+    padding: 0.5rem;
+}
+
+nav#menu a:hover {
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+nav#burger {
+    display: none;
+}
+
+/* Small devices
+@media only screen and (max-width: 620px) {
+    nav#menu {
+        display: none;
+    }
+
+    nav#burger {
+        padding: 0.5rem;
+        display: block;
+    }
+
+    #burgermenu {
+        display: none;
+    }
+
+    .burgerline1 {
+        width: 1rem;
+        height: 0.15rem;
+        margin: 0.2rem;
+        background-color: black;
+    }
+
+    .burgerline2 {
+        width: 1rem;
+        height: 0.15rem;
+        margin: 0.2rem;
+        background-color: black;
+    }
+
+    #burgericon:hover {
+
+
+    }
+} */
+
+/* --------------add-------------- */
+
+section#add {
+    background-image: url(images/resized/katsia-jazwinska-XbGSKbYHQOU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* section#add h1 {
+    color: var(--color2);
+} */
+
+section#add div div {
+    font-weight: bold;
+}
+
+section#add > div:first-child {
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 1.5rem;
+}
+
+section#add > div:last-child {
+    display: flex;
+    justify-content: left;
+    padding: 0.3rem;
+}
+
+img#social {
+    height: 1.2rem;
+    padding: 0.2rem;
+}
+
+img#social:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+/* Small devices */
+@media only screen and (max-width: 620px) {
+    section#add {
+        background-position: bottom;
+    }
+}
+
+/* --------------services-------------- */
+
+section#services {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+section#services > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#services .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    max-width: 11rem;
+}
+
+#services .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color3);
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+section#services h2 {
+    color: var(--color2);
+}
+
+section#services h5 {
+    padding-top: 0.6rem;
+}
+
+section#services h5:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+#services .container img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: var(--border);
+    height: 12.5rem;
+}
+
+/* Small devices */
+@media only screen and (max-width: 620px) {
+    section#services > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* --------------remember-------------- */
+
+section#remember {
+    height: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#remember div:last-child {
+    width: 20%;
+}
+
+section#remember div:first-child{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+section#remember div img {
+    width: 100%;
+    border: var(--border);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+section#remember div h2{
+    color: var(--color2);
+}
+
+section#remember div h5 {
+    background-color: var(--color3);
+    padding: 0.4rem;
+    border-radius: 8%;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#remember div h5:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+/* Small devices */
+@media only screen and (max-width: 1000px) {
+    section#remember {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    section#remember div:first-child{
+        width: 80%;
+        padding: 1rem;
+    }
+
+    section#remember div:last-child {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        width: 25%;
+    }
+}
+
+/* --------------popular-------------- */
+
+section#popular {
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+section#popular > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#popular div img {
+   height: 10rem ;
+   border: var(--border);
+}
+
+section#popular h2{
+    color: var(--color2);
+}
+
+section#popular div div h2 {
+    padding-top: 0.3rem;
+    text-align: right;
+    color: black;
+ }
+
+ section#popular div div h2:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+ /* Small devices */
+@media only screen and (max-width: 1000px) {
+    section#popular > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    section#popular div img {
+       height: 15rem ;
+    }
+}
+
+/* --------------talk-------------- */
+
+section#talk {
+    background-color: var(--color1);
+    padding: 1rem;
+    padding-bottom: 0;
+    border-bottom: var(--border);
+}
+
+section#talk div {
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    gap: 1rem;
+    padding: 3rem;
+    margin: 0rem 18rem;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+section#talk div h5{
+    background-color: var(--color1);
+    padding: 0.4rem;
+    border-radius: 8%;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#talk div h5:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+ /* Small devices */
+ @media only screen and (max-width: 1000px) {
+    section#talk div {
+        padding: 2rem;
+        margin: 0rem 2rem;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+    }
+}
+
+/* --------------footer-------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer section div div a {
+    color: black;
+}
+
+footer section:first-child {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+footer section  > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+footer section > div:last-child div {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    gap: 0.2rem;
+}
+
+footer section > div:last-child div h4:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+footer section > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+input, button {
+    padding: 0.3rem;
+    font-family: var(--font1);
+    font-size: 0.5rem;
+    border-radius: 0.1rem;
+}
+
+button {
+    background-color: var(--color3);
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+footer section:last-child {
+    background-color: var(--color3);
+    text-align: center;
+    font-size: 0.4rem;
+    padding: 0.5rem;
+}
+
+/* --------------collections-------------- */
+
+section#collections {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+section#collections > div:first-child {
+    display: flex;
+    justify-content: left;
+}
+
+section#collections > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#collections .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#collections .container:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#collections .container div {
+    background-color: var(--color3);
+    padding: 0.6rem;
+}
+
+#collections .container img {
+    border: var(--border);
+    max-height: 16rem;
+}
+
+/* Small devices */
+@media only screen and (max-width: 620px) {
+    .collections {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* --------------contact-------------- */
+
+section#contact {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+section#contact > div:first-child {
+    display: flex;
+    justify-content: left;
+}
+
+section#contact >div:last-child {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#message input, button, textarea {
+    padding: 0.3rem;
+    font-family: var(--font1);
+    font-size: 0.6rem;
+    border-radius: 0.1rem;
+}
+
+/* Small devices */
+@media only screen and (max-width: 620px) {
+    section#contact > div:last-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* --------------about-------------- */
+
+section#about {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+section#about > div:first-child {
+    display: flex;
+    justify-content: left;
+}
+
+section#about > div:last-child {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.8;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 3rem;
+}
+
+section#about h4 {
+    width: 100%;
+}
+
+section#about #imgabout {
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 10%;
+}
+
+/* Small devices */
+@media only screen and (max-width: 1000px) {
+    section#about > div:last-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    section#about h4 {
+        width: auto;
+    }
+}
